@@ -4,28 +4,31 @@ thiboutlea@eisti.eu
 
 ## What we had to do : 
 ***Setting up a development stack.**
-In this exercise you are going to set up a development stack infrastructure. This means that you
-will configure a container as a platform for testing your code, and you will develop your code
+
+In this exercise you are going to set up a development stack infrastructure. This means that you will configure a container as a platform for testing your code, and you will develop your code
 somewhere else (e.g. your laptop or another container).
-You are free to chose the tools to install and the development environment, but you must adhere
-to the following requirements:
-— Start from one or multiple existing image(s) in the Dockerhub (e.g. ubuntu, fedora, etc.). [✓ : python]
-— Use docker-compose to customise the image or images. [✓]
-— The customised image will be the test environment where you will test and debug your
+
+You are free to chose the tools to install and the development environment, but you must adhere to the following requirements:
+
+- Start from one or multiple existing image(s) in the Dockerhub (e.g. ubuntu, fedora, etc.). [✓ : python]
+- Use docker-compose to customise the image or images. [✓]
+- The customised image will be the test environment where you will test and debug your
 code. But it will also become the production environment that you will give to the client, so
 make sure everything is well configured in the container. Think about everything you need
 to have installed (Java EE, JRE, Scala, Python, a database, etc.). [✓ : Debug variable]
-— You will develop your code outside the test container, which will mount a volume into the
+- You will develop your code outside the test container, which will mount a volume into the
 development directory so that you can run and test your code inside the container. The
 code to develop, as well as the tools you will use (your IDE, for example) can be in installed
 in your laptop or in another container. [✓ : everyting is installed on my laptop]
-— Once the code, the docker-compose.yml file and everything else you need work perfectly,
+- Once the code, the docker-compose.yml file and everything else you need work perfectly,
 commit those files to gitLab or gitHub and send your client (that’s me) the link. I will clone
 the files and will run docker-compose up . Then I will grade your work.*
 
 ## To start the application : 
 In compose_tp2 : `docker-compose up`
+
 In a navigator : `http://0.0.0.0:8000/`
+
 
 If errors append due to IPv4 adress problem : 
 ```
@@ -42,8 +45,11 @@ This application is a Python application with the use of different frameworks :
 - Redis : for an easy database
 
 It start Redis on the port 6379 by default. 
+
 It starts the server on `http://0.0.0.0:5000/` by default.
+
 We can see our application on `http://0.0.0.0:8000/`. 
+
 
 The application consist as a queek use of Redis to show the name of the localhost and the number of queries, and then we can look at odl html works. 
 
