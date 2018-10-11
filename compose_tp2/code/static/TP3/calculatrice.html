@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<title>Calculatrice</title>
+<link rel="stylesheet" type="text/css" href="calculatrice.css" />
+<script src="calculatrice.js" type="text/javascript"> </script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta http-equiv="content-language" content="FR"/>
+</head>
+
+
+<body onload="suppScient();">
+
+<h2 id="calc">Calculatrice</h2>
+
+
+<input type="button" id="bouton1" value="Calculatrice Scientifique" onclick="science()" />
+
+<span>
+<table id="calcSimple">
+	<tr>
+		<td id="(" onclick="ecrire('(')">(</td>
+		<td id=")" onclick="ecrire(')')">)</td>
+		<td onclick="reset()">AC</td>
+		<td onclick="supp1()">EC</td>
+	</tr>
+	<tr>
+		<td id="7" onclick="ecrire('7')">7</td>
+		<td id="8" onclick="ecrire('8')">8</td>
+		<td id="9" onclick="ecrire('9')">9</td>
+		<td id="div" onclick="ecrire('/')">/</td>
+	</tr>
+	<tr>
+		<td id="4" onclick="ecrire('4')">4</td>
+		<td id="5" onclick="ecrire('5')">5</td>
+		<td id="6" onclick="ecrire('6')">6</td>
+		<td id="x" onclick="ecrire('x')">x</td>
+	</tr>
+	<tr>
+		<td id="1" onclick="ecrire('1')">1</td>
+		<td id="2" onclick="ecrire('2')">2</td>
+		<td id="3" onclick="ecrire('3')">3</td>
+		<td id="-" onclick="ecrire('-')">-</td>
+	</tr>
+	<tr>
+		<td id="0" onclick="ecrire('0')">0</td>
+		<td id="." onclick="ecrire('.')">.</td>
+		<td id="egal" onclick="egal()">=</td>
+		<td id="+" onclick="ecrire('+')">+</td>
+	</tr>
+</table>
+
+
+<div id="calcScienti">
+<table id="calcScient">
+	<tr>
+		<td id="sin" onclick="ecrire('sin(')">sin</td>
+		<td id="cos" onclick="ecrire('cos(')">cos</td>
+		<td id="tan" onclick="ecrire('tan(')">tan</td>
+	</tr>
+	<tr>
+		<td id="carre" onclick="ecrire('^2')">&sup2;</td>
+		<td id="pi" onclick="ecrire('pi')">pi</td>
+		<td id="puissance" onclick="ecrire('^')">x^y</td>
+</table>
+</div>
+
+
+</span>
+
+
+<form name="form1">
+<textarea id="tex" name="tex">
+</textarea>
+</form>
+
+
+
+
+
+
+
+
+
+</body>

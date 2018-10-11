@@ -1,0 +1,23 @@
+body {
+	font-family: Arial;
+	text-align: center;
+	background-color: #FFD7F6;
+	color:#01008D;
+}
+
+img {
+	width:120px;
+	height:120px;
+}
+
+table {
+	margin:10px auto auto auto;
+}
+
+p {
+	text-align: center;
+}
+
+#indic {
+	text-align: left;
+}

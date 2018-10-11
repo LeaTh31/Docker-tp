@@ -1,0 +1,59 @@
+body {
+	font-family:Arial;
+}
+
+.begin {
+	float:left;
+	text-align: left;
+	height: 140px;
+	width: 100%;
+}
+
+section#archives {
+	margin-right: 4%;
+	float:right;
+}
+
+section.article {
+	padding-top: 50px;
+	width: 75%;
+	height: auto;
+}
+
+
+ul.fst li {
+	float:left;
+	display:inline;
+	margin-left: 15px;
+}
+
+ul.fst li.fst {
+	margin-left: 0px;
+}
+
+footer#end {
+	float:right;
+	text-align: center;
+	width:800px;
+	height: 100px;
+}
+
+ul.end li {
+	clear:right;
+	float:left;
+	display:inline;
+	margin-right: 15px;
+}
+
+ul.end li.fst {
+	clear:right;
+	margin-left: 200px;
+}
+
+aside {
+	margin-left: 20px;
+	font-size:17px;
+	float:right;
+	width:200px;
+	height: 70px;	
+}

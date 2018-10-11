@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+<head>
+  	<link href="TP2_css.css" rel="stylesheet" /> 
+	<script src="TP2_js.js" type="text/javascript"> </script>
+	<title>Java Script TP3</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+
+<h1> This is ... Java Script !</h1>
+<h2>Fibonacci :</h2>
+	<div class="resultat">
+	<script type="text/javascript">
+		fibo();
+	</script>
+	<!--
+		<INPUT type="button" value="Reessayer Fibonacci" onClick="javascript:fibo()">
+	-->
+	</div>
+
+<h2>Tableaux :</h2>
+	<div>
+		<p>
+		Tableau de base : 
+		</p>
+	<script type="text/javascript">
+		tab=creerTab();
+		afficheTab(tab);
+	</script>
+		<p>
+		Tableau Trié : 
+		</p>
+	<script type="text/javascript">
+	afficheTab(trierTab(tab));
+	</script>
+	</div>
+
+<h2>Images :</h2>
+	<div>
+		<img id="image" src="JS_2012/amber.jpg" alt="image d'Amber"
+		onmouseover= "afficheImageM()" onmouseout="afficheImageA()"
+		onclick= "afficheInfoImg(document.getElementById('image'))"></img>
+
+		<!--
+		<input type="button" id="idbouton" name="nombouton" value="Afficher une image texte du bouton" onclick="fonction javascript"/>
+		-->
+
+	</div>
+
+
+
+<div class="eisti">
+<a href = "http://eisti.fr">Site de l'EISTI</a>
+</div>
+</body>
+</html>

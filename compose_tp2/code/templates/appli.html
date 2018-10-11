@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- <link href="appli.css" rel="stylesheet">  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/appli.css') }}">
+
+    <title>TP2</title>
+
+  </head>
+
+  <body>
+
+    <div id="first">
+      <h1>{{ msg }} </h1>
+      <p>Here is some information. </p>
+      <p>I have been seen {{ nb }} times, and this request was served by {{ hostname }}. <p/>
+    </div>
+
+    <div id="one">
+      <h1>Now, here is some of my old html work (in french) ! </h1>
+    </div>
+
+    <div class ="others">
+      <h2>TP1 : html et css</h2>
+      <a class="suj" href="{{ url_for('static', filename='TP1/TP1-Html.pdf') }}">Sujet TP1</a> 
+      <h3>Exo1</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP1/Exo1/Exo1.html') }}">Exo 1 : Faisons joujou avec les balises.</a> </li>
+      </ul>
+      <h3>Exo2</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP1/Exo2/exoDiv.html') }}">Exo 2 : Apportons un peu de style</a> </li>
+      </ul>
+      <h3>Exo3</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP1/Exo3/exoRecette.html') }}">Exo 3 : Mettons de l'ordre dans la cuisine. (Recette profiteroles)</a> </li>
+      </ul>
+      <h3>Exo4</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP1/Exo4/blog.html') }}">Exo 4 : Utilisons les balises sémantiques de HTML5. (Blog)</a> </li>
+      </ul>
+    </div>
+
+     <div class="others">
+      <h2>TP2 : Javascript</h2>
+      <a class="suj" href="{{ url_for('static', filename='TP2/tp2.pdf') }}">Sujet TP2</a> 
+      <h3>Fibonacci, tableau et images : </h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP2/TP2.html') }}">Des Maths ... Et des images !</a> </li>
+      </ul>
+      <h3>Images de planètes :</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP2/Planetes.html') }}">De belles planètes ... </a></li>
+      </ul>
+      <h3>Morpion :</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP2/Morpion.html') }}">Un petit morpion ?</a></li>
+      </ul>
+    </div>
+
+
+    <div class="others">
+      <h2>TP3 : Document Object Model</h2>
+      <a class="suj" href="{{ url_for('static', filename='TP3/tp3.pdf') }}">Sujet TP3</a>
+      <h3>Exo 1 : Elèves</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP3/TP3.html') }}">Les élèves ...</a> </li>
+      </ul>
+      <h3>Exo 2 : Magasin de disques</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP3/tp3/exoDOMImg.html') }}">Super magasin de disques !</a> </li>
+      </ul>
+      <h3>Exo 3 : Calculatrice</h3>
+      <ul>
+        <li> <a href="{{ url_for('static', filename='TP3/calculatrice.html') }}">Une maaagnifique calculette ...</a> </li>
+      </ul>
+    </div>
+
+  </body>
+
+</html>

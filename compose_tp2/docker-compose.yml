@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  web:
+    container_name: "TP2container"
+    build: .
+    ports:
+      - 8000:5000
+    environment:
+      DEBUG: 0
+    command: python appli.py
+    volumes:
+    # We mount the local file "code" as the file "src"
+      - ./code:/src
+
+  redis:
+    image: redis

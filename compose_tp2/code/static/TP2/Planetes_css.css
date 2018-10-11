@@ -1,0 +1,15 @@
+body {
+	font-family: arial;
+}
+
+h1 {
+	color:pink;
+	text-align: center;
+}
+
+.middle {
+	float:left;
+	margin-left:40%;
+	margin-top:70px;
+	text-align: center;
+}

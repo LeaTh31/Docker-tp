@@ -1,0 +1,67 @@
+/* pseudo-formats sur liens */
+a:link {
+	color: #af190e;
+	font-family: Verdana, Arial;
+	text-decoration: underline;
+}
+a:visited {
+	font-family: Verdana, Arial;
+	color: #990000;
+	text-decoration: underline;
+}
+a:hover {
+	color: #9966FF;
+	font-family: Verdana, Arial;
+	text-decoration: underline;
+}
+a:active {
+	font-family: Verdana, Arial;
+	color: #ffffff;
+	text-decoration: none;
+}
+/* 1ere lettre de chaque paragraphe */
+p:first-letter{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 28pt;
+	padding-left: 40px /* indentation */
+}
+/* titre de partie */
+h1{
+	font-weight: lighter;
+	font-style: italic;
+	text-decoration: underline;
+}
+/* pseudo format pour inserer une image avant chaque titre */
+h1:before{
+	content: url("puce.gif");
+}
+/* menu fixe */
+#menu-fixe {
+	margin-top: 20px;
+	margin-left: 27%;
+	text-align: center;
+	position: fixed;
+	z-index: 1;/* valeur pour être dessiné par dessus tous les composants*/
+}
+#insert{
+	float: left;
+}
+/* style paragraphe1 */
+.p1 {
+/*	position: relative;*/
+/*	position: absolute; sort le paragraphe du flux (fait monter la suite*/
+	background-color: yellow;
+	/*top: 200px;
+	left: 10%;*/
+	width: 50%;
+}
+/* style paragraphe2 */
+.p2 {
+/*	position: relative;*/
+/*	position: absolute; sort le paragraphe du flux (fait monter la suite*/
+	background-color: yellow;
+	width: 50%;
+	margin-left: 50%;
+}
+
