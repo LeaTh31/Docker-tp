@@ -3,7 +3,6 @@
 
   <head>
     <meta charset="UTF-8">
-    <!-- <link href="appli.css" rel="stylesheet">  -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/appli.css') }}">
 
     <title>TP2</title>
@@ -13,9 +12,10 @@
   <body>
 
     <div id="first">
-      <h1>{{ msg }} </h1>
-      <p>Here is some information. </p>
+      <h1> {{ msg }} </h1>
+      <p>Here is some information : </p>
       <p>I have been seen {{ nb }} times, and this request was served by {{ hostname }}. <p/>
+      <p>The debug mode of this application is {{ deb }}.
     </div>
 
     <div id="one">

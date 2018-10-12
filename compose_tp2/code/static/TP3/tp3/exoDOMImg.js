@@ -56,7 +56,7 @@ function deplacer() {
 
      nbIMG = (((document.getElementById('destination').childNodes.length)-3)/2);
      var p = document.getElementById('panier');
-     p.innerHTML = ((nbIMG*7.50) + (" €"));
+     p.innerHTML = ((nbIMG*7.50) + (" &#8364;"));
 
 }
 
